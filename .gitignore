@@ -1,8 +1,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/jupyternotebooks,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=jupyternotebooks,python
 
-# We don't want Git to track changes in large CSV files
-Food Demand Dataset/*.csv
+# We don't want Git to track changes in CSV data files from kaggle
+*.csv
+kaggle.json
+/data/*
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
