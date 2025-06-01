@@ -2,8 +2,7 @@
 * text=auto
 
 # Language markup for GitHub Linguist
-*.py linguist-language=Python
-*.ipynb linguist-language=Jupyter Notebook
+*.ipynb linguist-language = Python
 
 # CSV, TXT — read as text
 *.csv text
