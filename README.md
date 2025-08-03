@@ -80,18 +80,10 @@ The metrics used to evaluate the accurancy of models are:
 | Random Forest seasonal	| 174 710.91 | 417.98 | 0.12 |
 
 For the fisrt part of project, we got:
-1. The chosen non‑seasonal XGBoost model achieved the lowest error and was used for the final 8‑week demand forecast;
+1. The non‑seasonal XGBoost model achieved the lowest error and was used for the final 8‑week demand forecast;
 2. Forecast visualized with 95 % confidence intervals;
-3. Procurement requirements per week are:
-For week 146: 2698 beverages
-For week 147: 2598 beverages
-For week 148: 2621 beverages
-For week 149: 2718 beverages
-For week 150: 2737 beverages
-For week 151: 2682 beverages
-For week 152: 2698 beverages
-For week 153: 2738 beverages
-4. The forecast of the future order level does not look quite plausible - peaks not met increase decrease in demand. This may be due to the fact that for the trained model of XGBoost, the main important feature was _exponential smoothing_, which is done based on current values, which in this particular case were unknown. Also possible reasons are the complex behavior of the initial data, namely a _Random walk_.  
+3. The forecast of the future order level does not look quite plausible - peaks not met increase decrease in demand. This may be due to the fact that for the trained model of XGBoost, the main important feature was _exponential smoothing_, which is done based on current values, which in this particular case were unknown. 
+4. Also possible reasons are the complex behavior of the initial data, namely a _Random walk_.  
 
 For the second part:
 1. Five scenarios for customer demand manifestation were identified (upper confidence interval, upper middle ci, forecast, lower middle ci, lower ci);
